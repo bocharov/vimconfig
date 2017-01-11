@@ -1,3 +1,9 @@
+"Start pathogen
+runtime bundle/pathogen/autoload/pathogen.vim
+execute pathogen#infect()
+
+
+
 " General {
     set background=dark                     " Assume a dark background
     filetype plugin indent on               " Automatically detect file types.
