@@ -35,3 +35,11 @@ nmap <silent> <A-Left> :tabp<CR>
 nmap <silent> <A-Right> :tabn<CR>
 nmap <silent> <A-Up> :tabfirst<CR>
 nmap <silent> <A-Down> :tablast<CR>
+
+" Ctrl-P plugin include hidden files in fuzzy search
+let g:ctrlp_show_hidden=1
+let g:ctrlp_max_files=100000
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](\.(hg|svn|git|hglf)|lib)$',
+  \ 'file': '\v\.(pyc|swp|o|so|orig)$',
+  \ }
